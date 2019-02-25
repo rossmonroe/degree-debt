@@ -1,27 +1,31 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-import { withStyles, Typography } from '@material-ui/core';
 import '../style/css/Global.css';
 
-const styles = {
-    container: {
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-    }
-  }
 
 class Header extends Component {
   render() {
     return (
-      <div class='header'>
-        <Typography variant="h6" color="inherit">
-        Header
-        </Typography>
+      <div className='header'>
+      <div className="header-content">
+        <div id='top-logo'></div>
+        <div className='navigation'>
+            <ul>
+              <li><Link className='nav-link' to= '/'>Student Debt Calculator</Link></li>
+              <li><Link className='nav-link' to="/compare">Compare Degrees</Link></li>
+              <li><Link className='nav-link' to="/learn">Learn</Link></li>
+              <li><Link className='nav-link' to="/about">About</Link></li>
+            </ul>
+        </div>
+      </div>
+      <div id="header-title">
+        <h1>Learn how your degree choice <br/>affects your financial future.</h1>
+        <a href="#"><div className='button'>Get Started!</div></a>
+      </div>
       </div>
     );
   }
 }
 
-export default withStyles(styles)(Header);
+export default (Header);

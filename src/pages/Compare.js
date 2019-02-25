@@ -1,27 +1,18 @@
 import React, { Component } from 'react';
-import { withStyles, Typography } from '@material-ui/core';
 
 import '../style/css/Global.css';
-
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-  }
-}
 
 class Compare extends Component {
   render() {
     return (
-      <div class='page-content'>
-        <Typography variant="h6" color="inherit">
-        Compare
-        </Typography>
+      <div class='page-wrapper'>
+      <div className='separator margin-10'></div>
+        <div class='page-content'>
+          <h3>Compare</h3>
+        </div>
       </div>
     );
   }
 }
 
-export default withStyles(styles)(Compare);
+export default (Compare);

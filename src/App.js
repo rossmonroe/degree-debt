@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 import './App.css';
 
@@ -16,25 +16,16 @@ class App extends Component {
     return (
       
       <div className="App">
-        <div class='navigation'>
-          <Link class='nav-link' to="/">Student Debt Calculator</Link>
-          <Link class='nav-link' to="/Compare">Compare Degrees</Link>
-          <Link class='nav-link' to="/Learn">Learn</Link>
-          <Link class='nav-link' to="/About">About</Link>
-        </div>
-        <Header/>
         <BrowserRouter basename={process.env.PUBLIC_URL}>
           <div className="fillParent">
+            <Header/>
             <Route exact path="/" component={StudentDebtCalculator} />
             <Route path="/compare" component={Compare} />
             <Route path="/learn" component={Learn} />
             <Route path="/about" component={About} />
+            <Footer/>
           </div>
         </BrowserRouter>
-        <div className="App-header">
-            Learn React
-        </div>
-        <Footer/>
       </div>
     );
   }

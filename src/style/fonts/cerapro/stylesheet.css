@@ -1,0 +1,141 @@
+
+@font-face {
+    font-family: 'cerapro-black';
+    src: url('cerapro-black-webfont.woff2') format('woff2'),
+         url('cerapro-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cerapro-blackital';
+    src: url('cerapro-blackitalic-webfont.woff2') format('woff2'),
+         url('cerapro-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cerapro-bold';
+    src: url('cerapro-bold-webfont.woff2') format('woff2'),
+         url('cerapro-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cerapro-bolditalic';
+    src: url('cerapro-bolditalic-webfont.woff2') format('woff2'),
+         url('cerapro-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cerapro-light';
+    src: url('cerapro-light-webfont.woff2') format('woff2'),
+         url('cerapro-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cerapro-lightital';
+    src: url('cerapro-lightitalic-webfont.woff2') format('woff2'),
+         url('cerapro-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cerapro-medium';
+    src: url('cerapro-medium-webfont.woff2') format('woff2'),
+         url('cerapro-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cerapro-mediumita';
+    src: url('cerapro-mediumitalic-webfont.woff2') format('woff2'),
+         url('cerapro-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cerapro-regular';
+    src: url('cerapro-regular-webfont.woff2') format('woff2'),
+         url('cerapro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cerapro-regularit';
+    src: url('cerapro-regularitalic-webfont.woff2') format('woff2'),
+         url('cerapro-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cerapro-thin';
+    src: url('cerapro-thin-webfont.woff2') format('woff2'),
+         url('cerapro-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cerapro-thinitali';
+    src: url('cerapro-thinitalic-webfont.woff2') format('woff2'),
+         url('cerapro-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

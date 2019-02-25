@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'smythesansbold';
+    src: url('smythesans-bold-webfont.woff2') format('woff2'),
+         url('smythesans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'smythesanslight';
+    src: url('smythesans-light-webfont.woff2') format('woff2'),
+         url('smythesans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'smythesansthin';
+    src: url('smythesans-thin-webfont.woff2') format('woff2'),
+         url('smythesans-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'smythesansregular';
+    src: url('smythesans-ultralight-webfont.woff2') format('woff2'),
+         url('smythesans-ultralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'smythesansregular';
+    src: url('smythesans-webfont.woff2') format('woff2'),
+         url('smythesans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

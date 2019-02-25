@@ -1,27 +1,18 @@
 import React, { Component } from 'react';
-import { withStyles, Typography } from '@material-ui/core';
 
 import '../style/css/Global.css';
-
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-  }
-}
 
 class Learn extends Component {
   render() {
     return (
-      <div class='page-content'>
-        <Typography variant="h6" color="inherit">
-        Learn
-        </Typography>
+      <div class='page-wrapper'>
+      <div className='separator margin-10'></div>
+        <div class='page-content'>
+          <h3>Learn</h3>
+        </div>
       </div>
     );
   }
 }
 
-export default withStyles(styles)(Learn);
+export default (Learn);

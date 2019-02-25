@@ -1,27 +1,29 @@
 import React, { Component } from 'react';
 
-import { withStyles, Typography } from '@material-ui/core';
 import '../style/css/Global.css';
 
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-  }
-}
 
 class Footer extends Component {
   render() {
     return (
-      <div class='footer'>
-        <Typography variant="h6" color="inherit">
-        Footer
-        </Typography>
-      </div>
+      <footer id='footer'>
+        
+        <div id="footer-content">
+          <div className='opacity-50 separator margin-10'></div>
+          <div id='footer-logo'></div>
+          <div className='footer-navigation'>
+              <ul>
+                <li><a className='nav-link' href= '/'>Student Debt Calculator</a></li>
+                <li><a className='nav-link' href="/compare">Compare Degrees</a></li>
+                <li><a className='nav-link' href="/learn">Learn</a></li>
+                <li><a className='nav-link' href="/about">About</a></li>
+              </ul>
+          </div>
+          <div className='clear'></div>
+        </div>
+      </footer>
     );
   }
 }
 
-export default withStyles(styles)(Footer);
+export default (Footer);

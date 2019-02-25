@@ -1,3 +1,398 @@
-.class-link{
-    color: blue;
+@import "../fonts/smythesans/stylesheet.css";
+@import "../fonts/cerapro/stylesheet.css";
+@import "../fonts/graphik-lcg/stylesheet.css";
+
+
+/*---------------- SITE RESETS ----------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* This removes the top shadow iOS adds to all input areas */
+input[type="text"], input[type="email"], input[type="search"], input[type="password"] {
+	-webkit-appearance: none;
+	-moz-appearance: none; /* mobile firefox too! */
+}
+
+::selection{
+	background-color:#C7DDF8;
+	text-shadow:none
+	}
+::-moz-selection{
+	background-color:#C7DDF8;
+	text-shadow:none}
+:target,mark{
+	background-color:rgba(199,221,248,.3)
+}
+
+input {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    -webkit-border-radius:0; 
+    border-radius:0;
+}
+input, textarea, select {
+   -webkit-appearance: none;
+}
+
+body {
+    line-height: 1;
+    font-family: 'smythesansregular';
+    background-color: #e0dce6;
+}
+ol, ul {
+	list-style: none;
+}
+
+/*---------------- TEXT STYLES ----------------*/
+h1, h2, h3, h4, h5, h6{
+    font-family: 'smythesansregular';
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+h1{
+    font-size: 40px;
+    color: #35a393;
+}
+h2{
+    font-size: 36px;
+}
+h3{
+    font-size: 24px;
+    margin-bottom:5px;
+}
+
+p{
+    font-family: 'Graphik LCG Regular';
+    size: 16px;
+    line-height:140%;
+    margin-bottom:20px;
+    text-align: left;
+}
+sub{
+    font-size: 10px;
+    bottom: 0;
+}
+/*---------------- GENERAL STYLES ----------------*/
+
+.opacity-50{
+    opacity: 0.6;
+}
+.margin-10{
+    margin-bottom:10px;
+}
+.button{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px 16px;
+    margin:20px 0 0 20%;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: #0054a6;
+    border: 1px solid #FFFFFF;
+    color:#FFFFFF;
+    font-family: 'Graphik LCG Regular';
+}
+a.button:hover{
+    cursor: pointer;
+}
+
+/*---------------- NAVIGATION ----------------*/
+.nav-link{
+    padding: 0;
+    margin: 0;
+    font-family: 'cerapro-regular';
+    color: #434343;
+}
+.nav-link:hover{
+    padding: 0;
+    margin: 0;
+    color: #000000;
+    cursor: pointer;
+}
+.navigation{
+    height: 40px;
+    padding-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left:auto;
+    padding-top:20px;
+}
+.navigation ul{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    flex: content;
+    align-content: flex-end;
+}
+.navigation ul li{
+    font-size: 18px;
+    list-style: none;
+    text-align: left;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-left: 38px;
+    line-height: 0;
+}
+
+
+/*---------------- HEADER ----------------*/
+
+.header{
+    width: 100%;
+    height:400px;
+    margin: auto;
+    background: #f7f8fa no-repeat;
+    background-image: url(../images/header-background.jpg);
+    background-size: 100%;
+    background-position: bottom center;
+}
+.header-content{
+    width:1200px;
+    padding-top:30px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#top-logo{
+    display: inline-block;
+    height: 50px;
+    width: 300px;
+    background-size: 265px 39px;
+    background-repeat: no-repeat;
+    background-image: url(../images/logo.png);
+}
+
+#header-title{
+    width: 960px;
+    height: 200px;
+    margin:40px auto 0 auto;
+    text-align: left;
+}
+
+.banner{
+    width:100%;
+    height: auto;
+    background-color: #4cbdad;
+}
+.banner-content p, .banner-content h2{
+    color: #FFFFFF;
+}
+
+.banner-content{
+    width:960px;
+    margin: 70px auto 0 auto;
+    padding-bottom:50px;
+    text-align: left;
+}
+
+/*---------------- PAGE GLOBALS ----------------*/
+.page-wrapper{
+    width: 100%;
+    padding-bottom: 40px;
+}
+.page-content{
+    width: 960px;
+    margin: 0 auto;
+    padding:20px 0 20px 0;
+}
+.separator{
+    height: 2px;
+    width: 100%;
+    padding-bottom: 10px;
+    background-repeat: repeat-x;
+    background-image: url(../images/separator.png);
+}
+.floating-image{
+    margin-top:60px;
+}
+.clear{
+    clear: both;
+}
+
+/*---------------- DEBT CALCULATOR ----------------*/
+#debt-calculator{
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#debt-calculator p{
+    width: 100%;
+    text-align: left;
+    margin: 20px 0 4px 10px;
+}
+
+/*---------------- HERO IMAGE ----------------*/
+#coffee-cup{
+    width:235px;
+    height: 196px;
+    float: left;
+    background-repeat: no-repeat;
+    background-image: url(../images/coffee-cup.png);
+    background-size: 235px 196px;
+}
+#paper-clips{
+    width:212px;
+    height: 164px;
+    float: right;
+    background-repeat: no-repeat;
+    background-image: url(../images/paper-clips.png);
+    background-size: 212px 164px;
+}
+
+/*---------------- FOOTER ----------------*/
+#footer-content{
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 16px;
+}
+.footer-navigation{
+    width:500px;
+    height: 20;
+    margin-left:auto;
+    float: right;
+}
+.footer-navigation ul{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+.footer-navigation ul li{
+    font-size:14px;
+    list-style: none;
+    display: inline-block;
+    padding: 0px;
+    line-height: 140%;
+    margin: 4px 0 0 26px;
+}
+#footer-logo{
+    height: 20px;
+    width: 150px;
+    margin-top:4px;
+    float: left;
+    background-size: 130px 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(../images/logo.png);
+}
+
+
+/*---------------- FORM STYLE ----------------*/
+.form-input {
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	position: relative;
+}
+.form-input .button{
+    font-size: 16px;
+    float: right;
+}
+.form-input input[type="submit"]:focus{
+	outline: none;
+}
+.form-input input[type="text"] {
+	background-color: #FAFAFA;
+	width: 400px;
+	border-top:1px solid #D0D2D7;
+	border-bottom: 1px solid #FFFFFF;
+	border-left:none;
+	border-right:none;
+    padding: 12px 30px 8px 12px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.form-input input::-webkit-input-placeholder {
+    color: #BBBBBB;
+}
+.form-input input:focus::-webkit-input-placeholder {
+    color: #E3E3E3;
+}
+/* Firefox < 19 */
+.form-input input:-moz-placeholder {
+    color: #BBBBBB;
+}
+.form-input input:focus:-moz-placeholder {
+    color: #E3E3E3;
+}
+/* Firefox > 19 */
+.form-input input::-moz-placeholder {
+    color: #BBBBBB;
+}
+.form-input input:focus::-moz-placeholder {
+    color: #E3E3E3;
+}
+/* Internet Explorer 10 */
+.form-input input:-ms-input-placeholder {
+    color: #BBBBBB;
+}
+.form-input input:focus:-ms-input-placeholder {
+    color: #E3E3E3;
+}
+.form-input input[type="text"]{
+	color: #BBBBBB;
+	font-family: 'Graphik LCG Regular';
+    letter-spacing: 0.0400em;
+}
+.form-input input[type="text"]:focus{
+	outline: none;
+	color: #686868;
+}
+
+/*---------------- MEDIA QUERIES ----------------*/
+
+/* Hack to remove Safari's extra padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .placeholder input, .placeholder textarea { padding: 4px; }
+}
+
+/* RETINA STYLES */
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    #top-logo{
+        background-image: url(../images/logoX2.png);
+    }
+    #footer-logo{
+        background-image: url(../images/logoX2.png);
+    }
+    #coffee-cup{
+        background-image: url(../images/coffee-cupX2.png);
+    }
+    #paper-clips{
+        background-image: url(../images/paper-clipsX2.png);
+    }
+}
+
+/* RESIZING */
