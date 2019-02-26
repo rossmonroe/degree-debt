@@ -372,6 +372,7 @@ a.button:hover{
 
 ul.radio-buttons{
     display: block;
+    
 }
 
 ul.radio-buttons li{
@@ -381,6 +382,7 @@ ul.radio-buttons li{
     width: 140px;
     float: left;
     text-align: left;
+    padding-bottom:14px;
 }
   
 ul.radio-buttons li input[type=radio]{
