@@ -15,12 +15,25 @@ class StudentDebtCalculator extends Component {
           <div id="debt-calculator">
           <h3>Student Debt Calculator:</h3>
           <div className='opacity-50 separator margin-10'></div>
-            <form method="get" action="#" className="form-input">
+            <form method="get" action="#" className="form-input clear">
                 <p>Degree Type:</p>
                 <input name="q" size="40" type="text" placeholder="Graduate Degree"/>
                 <p>Major:</p>
                 <input name="q" size="40" type="text" placeholder="Electrical Engineering"/>
-                <p>Tuition Paid: <sub>(Scholarships, Cash, Grants.. etc.)</sub></p>
+                <p>Tuiton Type:</p>
+                <ul className="radio-buttons">
+                  <li>
+                    <input type="radio" id="I-option" name="selector"/>
+                    <label for="I-option">In State</label>
+                    <div class="check"><div class="inside"></div></div>
+                  </li>
+                  <li>
+                    <input type="radio" id="O-option" name="selector"/>
+                    <label for="O-option">Out of State</label>
+                    <div class="check"><div class="inside"></div></div>
+                  </li>
+                </ul>
+                <p className='clear'>Tuition Paid: <sub>(Scholarships, Cash, Grants.. etc.)</sub></p>
                 <input name="q" size="40" type="text" placeholder="$8,000"/>
                 <input type="submit" className='button' value="Calculate" />
                 <div className='clear'></div>

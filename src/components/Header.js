@@ -21,7 +21,7 @@ class Header extends Component {
       </div>
       <div id="header-title">
         <h1>Learn how your degree choice <br/>affects your financial future.</h1>
-        <a href="#"><div className='button'>Get Started!</div></a>
+        <a href="#calculator"><div className='button'>Get Started!</div></a>
       </div>
       </div>
     );

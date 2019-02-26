@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import '../style/css/Global.css';
 
@@ -13,10 +14,10 @@ class Footer extends Component {
           <div id='footer-logo'></div>
           <div className='footer-navigation'>
               <ul>
-                <li><a className='nav-link' href= '/'>Student Debt Calculator</a></li>
-                <li><a className='nav-link' href="/compare">Compare Degrees</a></li>
-                <li><a className='nav-link' href="/learn">Learn</a></li>
-                <li><a className='nav-link' href="/about">About</a></li>
+                <li><Link className='nav-link' to= '/'>Student Debt Calculator</Link></li>
+                <li><Link className='nav-link' to="/compare">Compare Degrees</Link></li>
+                <li><Link className='nav-link' to="/learn">Learn</Link></li>
+                <li><Link className='nav-link' to="/about">About</Link></li>
               </ul>
           </div>
           <div className='clear'></div>
