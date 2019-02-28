@@ -8,7 +8,7 @@ class Compare extends Component {
       <div class='page-wrapper'>
       <div className='separator margin-10'></div>
         <div class='page-content'>
-          <h3>Compare</h3>
+          <h3>Compare different degrees Compare different degrees Compare different degrees</h3>
         </div>
       </div>
     );
