@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/degree-debt/precache-manifest.1d11218f668599bc90f0a98e2fb39d16.js"
+  "/degree-debt/precache-manifest.088e8aee78dc626565f16a1dada9da9f.js"
 );
 
 workbox.clientsClaim();

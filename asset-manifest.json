@@ -1,14 +1,14 @@
 {
-  "main.css": "/degree-debt/static/css/main.f54fff4e.chunk.css",
-  "main.js": "/degree-debt/static/js/main.08a61dd1.chunk.js",
-  "main.js.map": "/degree-debt/static/js/main.08a61dd1.chunk.js.map",
+  "main.css": "/degree-debt/static/css/main.60b52a91.chunk.css",
+  "main.js": "/degree-debt/static/js/main.b248e919.chunk.js",
+  "main.js.map": "/degree-debt/static/js/main.b248e919.chunk.js.map",
   "runtime~main.js": "/degree-debt/static/js/runtime~main.b270ac23.js",
   "runtime~main.js.map": "/degree-debt/static/js/runtime~main.b270ac23.js.map",
   "static/js/2.a0b84135.chunk.js": "/degree-debt/static/js/2.a0b84135.chunk.js",
   "static/js/2.a0b84135.chunk.js.map": "/degree-debt/static/js/2.a0b84135.chunk.js.map",
   "index.html": "/degree-debt/index.html",
-  "precache-manifest.1d11218f668599bc90f0a98e2fb39d16.js": "/degree-debt/precache-manifest.1d11218f668599bc90f0a98e2fb39d16.js",
+  "precache-manifest.088e8aee78dc626565f16a1dada9da9f.js": "/degree-debt/precache-manifest.088e8aee78dc626565f16a1dada9da9f.js",
   "service-worker.js": "/degree-debt/service-worker.js",
-  "static/css/main.f54fff4e.chunk.css.map": "/degree-debt/static/css/main.f54fff4e.chunk.css.map",
+  "static/css/main.60b52a91.chunk.css.map": "/degree-debt/static/css/main.60b52a91.chunk.css.map",
   "static/media/Global.css": "/degree-debt/static/media/smythesans-webfont.de871946.woff2"
 }
