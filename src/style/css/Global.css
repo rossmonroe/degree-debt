@@ -191,9 +191,10 @@ a.button:hover{
 }
 
 #header-title{
-    width: 900px;
+    max-width: 70%;
+    width: 100%;
     margin:40px auto 0 auto;
-    padding-bottom:60px;
+    padding:0 5% 60px 5%;
     text-align: left;
 }
 
@@ -207,9 +208,10 @@ a.button:hover{
 }
 
 .banner-content{
-    width:960px;
+    max-width:960px;
+    width: 100%;
     margin: 70px auto 0 auto;
-    padding-bottom:50px;
+    padding:0 5% 50px 5%;
     text-align: left;
 }
 
@@ -219,7 +221,7 @@ a.button:hover{
     padding-bottom: 40px;
 }
 .page-content{
-    width: 960px;
+    width: 70%;
     margin: 0 auto;
     padding:20px 0 0 0;
 }
@@ -239,7 +241,8 @@ a.button:hover{
 
 /*---------------- DEBT CALCULATOR ----------------*/
 #debt-calculator{
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -269,12 +272,12 @@ a.button:hover{
 
 /*---------------- FOOTER ----------------*/
 #footer-content{
-    width: 960px;
+    width: 70%;
     margin: 0 auto;
     padding-bottom: 16px;
 }
 .footer-navigation{
-    width:500px;
+    width:70%;
     height: 20;
     margin-left:auto;
     float: right;
@@ -307,7 +310,8 @@ a.button:hover{
 
 /*---------------- FORM STYLE ----------------*/
 .form-input {
-	max-width: 400px;
+    max-width: 400px;
+    width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 15px;
@@ -322,7 +326,8 @@ a.button:hover{
 }
 .form-input input[type="text"] {
 	background-color: #FAFAFA;
-	width: 400px;
+    max-width: 400px;
+    width: 100%;
 	border-top:1px solid #D0D2D7;
 	border-bottom: 1px solid #FFFFFF;
 	border-left:none;
@@ -371,12 +376,11 @@ a.button:hover{
 }
 
 
-
+/* Radio Buttons */
 ul.radio-buttons{
     display: block;
     
 }
-
 ul.radio-buttons li{
     color: rgb(104, 104, 104);
     display: inline-block;
