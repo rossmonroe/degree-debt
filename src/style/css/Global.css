@@ -132,16 +132,20 @@ a.button:hover{
 .nav-link{
     font-family: 'cerapro-regular';
     color: #434343;
+    padding: 0;
+    margin: 0;
 }
 .nav-link:hover{
     color: #000000;
     cursor: pointer;
+    padding: 0;
+    margin: 0;
 }
 .navigation{
     display: flex;
     justify-content: flex-end;
 }
-/* .navigation ul{
+.navigation ul{
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -157,7 +161,7 @@ a.button:hover{
     margin: 0;
     margin-left: 38px;
     line-height: 0;
-} */
+}
 
 
 /*---------------- HEADER ----------------*/
