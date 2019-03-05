@@ -17,7 +17,7 @@ class StudentDebtCalculator extends Component {
             <div className='opacity-50 separator margin-10'></div>
             <form method="get" action="#" className="form-input clear">
               <p>Degree Type:</p>
-              <input name="q" size="40" type="text" list="degree-types" placeholder="Graduate Degree" />
+              <input name="q" size="40" type="text" autocomplete='off' list="degree-types" placeholder="Graduate Degree" />
               <datalist id="degree-types">
                 <option value="Bachelors Degree" />
                 <option value="Associates Degree" />
@@ -26,7 +26,7 @@ class StudentDebtCalculator extends Component {
               </datalist>
 
               <p>Major:</p>
-              <input name="q" size="40" type="text" list="major" placeholder="Electrical Engineering" />
+              <input name="q" size="40" type="text" autocomplete='off' list="major" placeholder="Electrical Engineering" />
               <datalist id="major">
                 <option value="Human Centered Design and Engineering" />
                 <option value="Computer Science" />
@@ -50,7 +50,7 @@ class StudentDebtCalculator extends Component {
                 </li>
               </ul>
               <p className='clear'>Tuition Paid: <sub>(Scholarships, Cash, Grants.. etc.)</sub></p>
-              <input name="q" size="40" type="text" placeholder="$8,000" />
+              <input name="q" size="40" autocomplete='off' type="text" placeholder="$8,000" />
               <input type="submit" className='button' value="Calculate" />
               <div className='clear'></div>
             </form>
