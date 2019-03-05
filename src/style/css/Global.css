@@ -277,7 +277,7 @@ a.button:hover{
 #footer-content{
     width: 70%;
     margin: 0 auto;
-    padding-bottom: 16px;
+    padding: 0 5% 16px 5%;
 }
 .footer-navigation{
     height: 20;
