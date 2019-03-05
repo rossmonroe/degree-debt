@@ -26,7 +26,16 @@ class StudentDebtCalculator extends Component {
               </datalist>
 
               <p>Major:</p>
-              <input name="q" size="40" type="text" placeholder="Electrical Engineering" />
+              <input name="q" size="40" type="text" list="degree-types" placeholder="Electrical Engineering" />
+              <datalist id="degree-types">
+                <option value="Human Centered Design and Engineering" />
+                <option value="Computer Science" />
+                <option value="Informatics" />
+                <option value="Interaction Design" />
+                <option value="English" />
+                <option value="Geography" />
+                <option value="Aerospace Engineering" />
+              </datalist>
               <p>Tuiton Type:</p>
               <ul className="radio-buttons">
                 <li>
