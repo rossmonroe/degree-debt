@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 
 import '../style/css/Global.css';
 
-import AboutInfo from '../components/AboutInfo.js';
+import LearnInfo from '../components/LearnInfo.js';
 
 class Learn extends Component {
   render() {
     return (
       <div class='page-wrapper'>
-        <AboutInfo />
+        <LearnInfo />
         <div className='separator margin-10'></div>
         <div class='page-content'>
         </div>
