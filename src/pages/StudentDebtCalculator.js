@@ -26,8 +26,8 @@ class StudentDebtCalculator extends Component {
               </datalist>
 
               <p>Major:</p>
-              <input name="q" size="40" type="text" list="degree-types" placeholder="Electrical Engineering" />
-              <datalist id="degree-types">
+              <input name="q" size="40" type="text" list="major" placeholder="Electrical Engineering" />
+              <datalist id="major">
                 <option value="Human Centered Design and Engineering" />
                 <option value="Computer Science" />
                 <option value="Informatics" />
