@@ -504,15 +504,10 @@ input[type=radio]:checked ~ label{
     }
 }
 @media only screen and (max-width: 1200px) {
-    #header-title, .banner-content, .header-content{
+    #header-title, .banner-content, .header-content, .page-content{
         max-width: 100%;
     }
     
-    .page-content{
-        width: 100%;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
     #footer-content{
         width: 100%;
         padding:0 5% 16px 5%;
