@@ -317,7 +317,6 @@ a.button:hover{
 
 /*---------------- FORM STYLE ----------------*/
 .form-input {
-    max-width: 400px;
     width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -333,7 +332,6 @@ a.button:hover{
 }
 .form-input input[type="text"] {
 	background-color: #FAFAFA;
-    max-width: 400px;
     width: 100%;
 	border-top:1px solid #D0D2D7;
 	border-bottom: 1px solid #FFFFFF;
