@@ -22,13 +22,7 @@ class StudentDebtCalculator extends Component {
                 <option value="Bachelors Degree" />
                 <option value="Associates Degree" />
                 <option value="Masters Degree" />
-                <option value="Yellow" />
-                <option value="Orange" />
-                <option value="Purple" />
-                <option value="Black" />
-                <option value="White" />
-                <option value="Gray" />
-                <option value="Plaid" />
+                <option value="PHD" />
               </datalist>
 
               <p>Major:</p>
