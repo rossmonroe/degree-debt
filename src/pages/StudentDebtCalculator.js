@@ -17,7 +17,20 @@ class StudentDebtCalculator extends Component {
           <div className='opacity-50 separator margin-10'></div>
             <form method="get" action="#" className="form-input clear">
                 <p>Degree Type:</p>
-                <input name="q" size="40" type="text" placeholder="Graduate Degree"/>
+                <input name="q" size="40" type="text" list="degree-types" placeholder="Graduate Degree"/>
+                <datalist id="degree-types">
+                    <option value="Bachelors Degree"/> 
+                    <option value="Red"/> 
+                    <option value="Blue"/> 
+                    <option value="Yellow"/> 
+                    <option value="Orange"/> 
+                    <option value="Purple"/> 
+                    <option value="Black"/> 
+                    <option value="White"/> 
+                    <option value="Gray"/> 
+                    <option value="Plaid"/> 
+                </datalist>
+
                 <p>Major:</p>
                 <input name="q" size="40" type="text" placeholder="Electrical Engineering"/>
                 <p>Tuiton Type:</p>

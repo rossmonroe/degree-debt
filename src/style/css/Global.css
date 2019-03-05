@@ -21,12 +21,12 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	vertical-align: baseline;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 
 /* This removes the top shadow iOS adds to all input areas */
@@ -119,12 +119,18 @@ sub{
 }
 a.button:hover{
     cursor: pointer;
+    border: 1px solid rgb(68, 68, 68);
 }
 .header-button{
     margin:0px;
 }
 
 /*---------------- NAVIGATION ----------------*/
+
+
+.show, .collapsing{
+    background-color: rgb(233, 233, 233);
+}
 .navbar{
     width:100%;
     padding: 0;
@@ -132,14 +138,10 @@ a.button:hover{
 .nav-link{
     font-family: 'cerapro-regular';
     color: #434343;
-    padding: 0;
-    margin: 0;
 }
 .nav-link:hover{
     color: #000000;
     cursor: pointer;
-    padding: 0;
-    margin: 0;
 }
 .navigation{
     display: flex;
@@ -175,8 +177,8 @@ a.button:hover{
     background-position: bottom right;
 }
 .header-content{
-    max-width:90%;
-    padding-top:16px;
+    max-width:70%;
+    padding:16px 5% 0 5%;
     margin: 0 auto;
     display: flex;
 }
@@ -191,10 +193,10 @@ a.button:hover{
 }
 
 #header-title{
-    max-width: 960px;
+    max-width: 70%;
     width: 100%;
-    margin:40px auto 0 auto;
-    padding:0 5% 60px 5%;
+    margin:60px auto 0 auto;
+    padding:0 5% 80px 5%;
     text-align: left;
 }
 
@@ -202,15 +204,16 @@ a.button:hover{
     width:100%;
     height: auto;
     background-color: #4cbdad;
+    overflow: hidden;
 }
 .banner-content p, .banner-content h2{
     color: #FFFFFF;
 }
 
 .banner-content{
-    max-width:960px;
+    max-width: 70%;
     width: 100%;
-    margin: 70px auto 0 auto;
+    margin: 56px auto 0 auto;
     padding:0 5% 50px 5%;
     text-align: left;
 }
@@ -232,20 +235,17 @@ a.button:hover{
     background-repeat: repeat-x;
     background-image: url(../images/separator.png);
 }
-.floating-image{
-    margin-top:60px;
-}
 .clear{
     clear: both;
 }
 
 /*---------------- DEBT CALCULATOR ----------------*/
+
 #debt-calculator{
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
 }
-
 #debt-calculator p{
     width: 100%;
     text-align: left;
@@ -253,6 +253,9 @@ a.button:hover{
 }
 
 /*---------------- HERO IMAGE ----------------*/
+.floating-image{
+    margin-top:50px;
+}
 #coffee-cup{
     width:235px;
     height: 196px;
@@ -277,10 +280,14 @@ a.button:hover{
     padding-bottom: 16px;
 }
 .footer-navigation{
-    width:70%;
     height: 20;
     margin-left:auto;
     float: right;
+}
+
+.footer-navigation .nav-link{
+    padding: 0;
+    margin: 0;
 }
 .footer-navigation ul{
     text-decoration: none;
@@ -375,6 +382,10 @@ a.button:hover{
 	color: #353535;
 }
 
+.form-input input[type="submit"]:hover{
+    background-color: #023b75;
+    cursor: pointer;
+}
 
 /* Radio Buttons */
 ul.radio-buttons{
@@ -478,7 +489,77 @@ input[type=radio]:checked ~ label{
 
 /* RESIZING MEDIA QUIRIES */
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 1200px and down) */
+
+@media only screen and (max-width: 1400px) {
+    #coffee-cup{
+        display: block;
+        position: relative;
+        left: -4%;
+        overflow: hidden;
+    }
+    #paper-clips{
+        display: block;
+        position: relative;
+        right: -4%;
+        overflow: hidden;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    #header-title, .banner-content, .header-content{
+        max-width: 100%;
+    }
+    
+    .page-content{
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #footer-content{
+        width: 100%;
+        padding:0 5% 16px 5%;
+    }
+    #paper-clips{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #coffee-cup{
+        display: none;
+    }
+    #header-title{
+        margin-top: 40px;
+    }
+    .banner-content{
+        margin: 40px auto;
+        padding-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #footer-logo{
+        float: none;
+        display: block;
+        margin-bottom: 5px;
+    }
+    .footer-navigation ul li{
+        display: block;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+    .footer-navigation ul li .nav-link{
+        margin: 0;
+        padding: 0;
+    }
+    .footer-navigation{
+        float: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     #coffee-cup{
         display: none;
@@ -495,9 +576,7 @@ input[type=radio]:checked ~ label{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    #coffee-cup{
-        display: block;
-    }
+    
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
