@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "32cfb08ede152657091275f721977954",
-    "url": "/degree-debt/static/media/cerapro-thin-webfont.32cfb08e.woff"
+    "revision": "29fa5758908558554950e43a1ebc5741",
+    "url": "/degree-debt/static/media/cerapro-regularitalic-webfont.29fa5758.woff"
   },
   {
-    "revision": "b248e9198aca71030577",
-    "url": "/degree-debt/static/css/main.60b52a91.chunk.css"
+    "revision": "537fc10fa00c58d99ddd",
+    "url": "/degree-debt/static/css/main.b8ca084a.chunk.css"
   },
   {
     "revision": "b270ac23d1bb58727a1a",
     "url": "/degree-debt/static/js/runtime~main.b270ac23.js"
   },
   {
-    "revision": "a0b8413588ab517974f5",
-    "url": "/degree-debt/static/js/2.a0b84135.chunk.js"
+    "revision": "2b1a7a96b2f2c2131a0f",
+    "url": "/degree-debt/static/js/2.2b1a7a96.chunk.js"
   },
   {
     "revision": "6ab1c20bf40ffd2ef30f8a71abb3a7bd",
@@ -24,10 +24,6 @@ self.__precacheManifest = [
     "url": "/degree-debt/static/media/coffee-cup.d2e73533.png"
   },
   {
-    "revision": "bffdbc498c14d6b6a7ae8e5b7ee3f5fc",
-    "url": "/degree-debt/static/media/header-background.bffdbc49.jpg"
-  },
-  {
     "revision": "e5a8982f4f27d765082a2f7fa8257a3c",
     "url": "/degree-debt/static/media/coffee-cupX2.e5a8982f.png"
   },
@@ -36,20 +32,16 @@ self.__precacheManifest = [
     "url": "/degree-debt/static/media/paper-clipsX2.8ee5e5a2.png"
   },
   {
-    "revision": "b482524fc93bce4360095097e9108bee",
-    "url": "/degree-debt/static/media/smythesans-light-webfont.b482524f.woff2"
+    "revision": "da47e3a901587e5dadd919ce6ddb9250",
+    "url": "/degree-debt/static/media/smythesans-thin-webfont.da47e3a9.woff2"
   },
   {
     "revision": "e8bf1c10ff2ce2a8fd46b1c025bd5cb8",
     "url": "/degree-debt/static/media/smythesans-bold-webfont.e8bf1c10.woff2"
   },
   {
-    "revision": "da47e3a901587e5dadd919ce6ddb9250",
-    "url": "/degree-debt/static/media/smythesans-thin-webfont.da47e3a9.woff2"
-  },
-  {
-    "revision": "de871946379e65d1060852974fb67a36",
-    "url": "/degree-debt/static/media/smythesans-webfont.de871946.woff2"
+    "revision": "b482524fc93bce4360095097e9108bee",
+    "url": "/degree-debt/static/media/smythesans-light-webfont.b482524f.woff2"
   },
   {
     "revision": "93b68b5ea5873c7eb03ec6359e43fc6f",
@@ -58,6 +50,10 @@ self.__precacheManifest = [
   {
     "revision": "92c652b8bc6520a155f6e45b5abde6aa",
     "url": "/degree-debt/static/media/cerapro-black-webfont.92c652b8.woff2"
+  },
+  {
+    "revision": "de871946379e65d1060852974fb67a36",
+    "url": "/degree-debt/static/media/smythesans-webfont.de871946.woff2"
   },
   {
     "revision": "23c486c53297f1da49af40912a3b2400",
@@ -76,12 +72,12 @@ self.__precacheManifest = [
     "url": "/degree-debt/static/media/cerapro-light-webfont.ea787a60.woff2"
   },
   {
-    "revision": "39854cbb625b17f9b2a3266ee501ac3a",
-    "url": "/degree-debt/static/media/cerapro-mediumitalic-webfont.39854cbb.woff2"
-  },
-  {
     "revision": "da85a8de4e8b366365de291d8b42720c",
     "url": "/degree-debt/static/media/cerapro-medium-webfont.da85a8de.woff2"
+  },
+  {
+    "revision": "39854cbb625b17f9b2a3266ee501ac3a",
+    "url": "/degree-debt/static/media/cerapro-mediumitalic-webfont.39854cbb.woff2"
   },
   {
     "revision": "8756ee007ce811d7d33a1b9c624f84a3",
@@ -100,20 +96,16 @@ self.__precacheManifest = [
     "url": "/degree-debt/static/media/smythesans-light-webfont.d7b6dfec.woff"
   },
   {
+    "revision": "29d3c0a87f8dd2d93fff158f7fb24a1f",
+    "url": "/degree-debt/static/media/smythesans-webfont.29d3c0a8.woff"
+  },
+  {
     "revision": "865a9894cf23fd32c30cc6274ee32bfc",
     "url": "/degree-debt/static/media/smythesans-thin-webfont.865a9894.woff"
   },
   {
     "revision": "9a981d556af5b43c3cae5eb67f34805b",
     "url": "/degree-debt/static/media/smythesans-ultralight-webfont.9a981d55.woff"
-  },
-  {
-    "revision": "81b52076df50daffc31dad03080b9fec",
-    "url": "/degree-debt/static/media/cerapro-blackitalic-webfont.81b52076.woff"
-  },
-  {
-    "revision": "29d3c0a87f8dd2d93fff158f7fb24a1f",
-    "url": "/degree-debt/static/media/smythesans-webfont.29d3c0a8.woff"
   },
   {
     "revision": "8da4fe4692dcb6f4fd93429a66d5cb0b",
@@ -124,12 +116,12 @@ self.__precacheManifest = [
     "url": "/degree-debt/static/media/cerapro-bold-webfont.e6e0049d.woff"
   },
   {
-    "revision": "c07fef32d217e8ed9af858bbe764f80a",
-    "url": "/degree-debt/static/media/cerapro-bolditalic-webfont.c07fef32.woff"
+    "revision": "81b52076df50daffc31dad03080b9fec",
+    "url": "/degree-debt/static/media/cerapro-blackitalic-webfont.81b52076.woff"
   },
   {
-    "revision": "15bde87f77cc9d0cf6f7a2153dde7612",
-    "url": "/degree-debt/static/media/cerapro-lightitalic-webfont.15bde87f.woff2"
+    "revision": "c07fef32d217e8ed9af858bbe764f80a",
+    "url": "/degree-debt/static/media/cerapro-bolditalic-webfont.c07fef32.woff"
   },
   {
     "revision": "f4485f78a38f242e4d04b7f1613b47aa",
@@ -140,6 +132,10 @@ self.__precacheManifest = [
     "url": "/degree-debt/static/media/cerapro-lightitalic-webfont.bc725608.woff"
   },
   {
+    "revision": "15bde87f77cc9d0cf6f7a2153dde7612",
+    "url": "/degree-debt/static/media/cerapro-lightitalic-webfont.15bde87f.woff2"
+  },
+  {
     "revision": "c0804953a278275b0d5456b48db1a820",
     "url": "/degree-debt/static/media/cerapro-medium-webfont.c0804953.woff"
   },
@@ -148,28 +144,32 @@ self.__precacheManifest = [
     "url": "/degree-debt/static/media/cerapro-mediumitalic-webfont.f936942a.woff"
   },
   {
-    "revision": "78414d4bd5fd94731e3ef73d7342d62c",
-    "url": "/degree-debt/static/media/cerapro-regular-webfont.78414d4b.woff"
+    "revision": "32cfb08ede152657091275f721977954",
+    "url": "/degree-debt/static/media/cerapro-thin-webfont.32cfb08e.woff"
   },
   {
     "revision": "ec1f6115c3c1cabb84b414efe6e7d23c",
     "url": "/degree-debt/static/media/cerapro-regularitalic-webfont.ec1f6115.woff2"
   },
   {
-    "revision": "29fa5758908558554950e43a1ebc5741",
-    "url": "/degree-debt/static/media/cerapro-regularitalic-webfont.29fa5758.woff"
-  },
-  {
-    "revision": "b248e9198aca71030577",
-    "url": "/degree-debt/static/js/main.b248e919.chunk.js"
-  },
-  {
     "revision": "f02a75aa4d96f01481b42591adb75a09",
     "url": "/degree-debt/static/media/cerapro-thinitalic-webfont.f02a75aa.woff2"
   },
   {
+    "revision": "78414d4bd5fd94731e3ef73d7342d62c",
+    "url": "/degree-debt/static/media/cerapro-regular-webfont.78414d4b.woff"
+  },
+  {
+    "revision": "537fc10fa00c58d99ddd",
+    "url": "/degree-debt/static/js/main.537fc10f.chunk.js"
+  },
+  {
     "revision": "1a5a4d7a598cf4bc2bd6d07f5ed38580",
     "url": "/degree-debt/static/media/cerapro-thinitalic-webfont.1a5a4d7a.woff"
+  },
+  {
+    "revision": "547cda538178a856503668cd3fb2d2d4",
+    "url": "/degree-debt/static/media/header-background.547cda53.jpg"
   },
   {
     "revision": "2f338b5ebd9e450c9e4cfcccb69100eb",
@@ -200,20 +200,20 @@ self.__precacheManifest = [
     "url": "/degree-debt/static/media/GraphikLCG-ExtralightItalic.776f6040.woff2"
   },
   {
-    "revision": "10b7bd9b829afb254fb3c2e56229ef8c",
-    "url": "/degree-debt/static/media/GraphikLCG-Medium.10b7bd9b.woff2"
+    "revision": "728584245d046a238b488676ba20374e",
+    "url": "/degree-debt/static/media/GraphikLCG-ThinItalic.72858424.woff2"
   },
   {
     "revision": "a2bb67267fe03612c458e9a393ac3040",
     "url": "/degree-debt/static/media/GraphikLCG-BoldItalic.a2bb6726.woff2"
   },
   {
-    "revision": "728584245d046a238b488676ba20374e",
-    "url": "/degree-debt/static/media/GraphikLCG-ThinItalic.72858424.woff2"
-  },
-  {
     "revision": "4f566b4b3b3eaaff49a6d792ee67a3f0",
     "url": "/degree-debt/static/media/GraphikLCG-MediumItalic.4f566b4b.woff2"
+  },
+  {
+    "revision": "10b7bd9b829afb254fb3c2e56229ef8c",
+    "url": "/degree-debt/static/media/GraphikLCG-Medium.10b7bd9b.woff2"
   },
   {
     "revision": "4d0a55d32d796705a215320818612628",
@@ -232,10 +232,6 @@ self.__precacheManifest = [
     "url": "/degree-debt/static/media/GraphikLCG-Light.91bde36b.woff2"
   },
   {
-    "revision": "454a269e8f5d68dd8c315e6bdc91bd49",
-    "url": "/degree-debt/static/media/GraphikLCG-Extralight.454a269e.woff2"
-  },
-  {
     "revision": "03f9b3f3a5e9cb2310ca177764eb7588",
     "url": "/degree-debt/static/media/GraphikLCG-SemiboldItalic.03f9b3f3.woff2"
   },
@@ -244,12 +240,8 @@ self.__precacheManifest = [
     "url": "/degree-debt/static/media/GraphikLCG-Black.518fff7c.woff2"
   },
   {
-    "revision": "cf860eaafd34ab1171a56c5296991ab6",
-    "url": "/degree-debt/static/media/GraphikLCG-Super.cf860eaa.woff"
-  },
-  {
-    "revision": "339c2e00787966774270be03e2e948d7",
-    "url": "/degree-debt/static/media/GraphikLCG-Semibold.339c2e00.woff"
+    "revision": "454a269e8f5d68dd8c315e6bdc91bd49",
+    "url": "/degree-debt/static/media/GraphikLCG-Extralight.454a269e.woff2"
   },
   {
     "revision": "b1ae0f61d24fe8581622919a15d8939b",
@@ -260,8 +252,12 @@ self.__precacheManifest = [
     "url": "/degree-debt/static/media/GraphikLCG-Bold.ccf9f0ec.woff"
   },
   {
-    "revision": "cda5990a17193e2b2579170ecf509feb",
-    "url": "/degree-debt/static/media/GraphikLCG-ExtralightItalic.cda5990a.woff"
+    "revision": "cf860eaafd34ab1171a56c5296991ab6",
+    "url": "/degree-debt/static/media/GraphikLCG-Super.cf860eaa.woff"
+  },
+  {
+    "revision": "339c2e00787966774270be03e2e948d7",
+    "url": "/degree-debt/static/media/GraphikLCG-Semibold.339c2e00.woff"
   },
   {
     "revision": "5d583e71b2101b37de47db102781e069",
@@ -270,6 +266,10 @@ self.__precacheManifest = [
   {
     "revision": "85df45cb59004c82a6b6e11f60c5b161",
     "url": "/degree-debt/static/media/GraphikLCG-ThinItalic.85df45cb.woff"
+  },
+  {
+    "revision": "cda5990a17193e2b2579170ecf509feb",
+    "url": "/degree-debt/static/media/GraphikLCG-ExtralightItalic.cda5990a.woff"
   },
   {
     "revision": "0d776a835fb10e6a6ce46f4ac1a0f6a4",
@@ -284,39 +284,39 @@ self.__precacheManifest = [
     "url": "/degree-debt/static/media/GraphikLCG-SuperItalic.e1ca0193.woff"
   },
   {
-    "revision": "afc50e8ac92a30d9ad36302be372ffbf",
-    "url": "/degree-debt/static/media/GraphikLCG-Light.afc50e8a.woff"
-  },
-  {
     "revision": "9b4d4436c3e9ee9117a15f2ebbe9934a",
     "url": "/degree-debt/static/media/GraphikLCG-Extralight.9b4d4436.woff"
-  },
-  {
-    "revision": "efe98be2dec476ecd60c8a1ebd960d8c",
-    "url": "/degree-debt/static/media/GraphikLCG-Black.efe98be2.woff"
   },
   {
     "revision": "83b309579695f8df69230d4b31ab101f",
     "url": "/degree-debt/static/media/GraphikLCG-LightItalic.83b30957.woff"
   },
   {
-    "revision": "51a4afa632ccd8d7831f6481183ffff6",
-    "url": "/degree-debt/static/media/GraphikLCG-BoldItalic.51a4afa6.woff"
+    "revision": "afc50e8ac92a30d9ad36302be372ffbf",
+    "url": "/degree-debt/static/media/GraphikLCG-Light.afc50e8a.woff"
   },
   {
-    "revision": "d736acb1fe1729df3762acfff5e168c3",
-    "url": "/degree-debt/static/media/GraphikLCG-MediumItalic.d736acb1.woff"
+    "revision": "efe98be2dec476ecd60c8a1ebd960d8c",
+    "url": "/degree-debt/static/media/GraphikLCG-Black.efe98be2.woff"
+  },
+  {
+    "revision": "51a4afa632ccd8d7831f6481183ffff6",
+    "url": "/degree-debt/static/media/GraphikLCG-BoldItalic.51a4afa6.woff"
   },
   {
     "revision": "cf0f27e483bc9ba8aa5a8799198240ee",
     "url": "/degree-debt/static/media/GraphikLCG-BlackItalic.cf0f27e4.woff"
   },
   {
+    "revision": "d736acb1fe1729df3762acfff5e168c3",
+    "url": "/degree-debt/static/media/GraphikLCG-MediumItalic.d736acb1.woff"
+  },
+  {
     "revision": "e66fdd037978981ea7a7fd00913a35a7",
     "url": "/degree-debt/static/media/GraphikLCG-SemiboldItalic.e66fdd03.woff"
   },
   {
-    "revision": "1a16c42ea631e0b2f6a8760675ace097",
+    "revision": "a46ffcd5602c1167401cb358ca6928e6",
     "url": "/degree-debt/index.html"
   }
 ];
