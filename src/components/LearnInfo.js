@@ -7,7 +7,7 @@ import '../style/css/Global.css';
 class LearnInfo extends Component {
   render() {
     return (
-      <div className='banner'>
+      <div className='banner aboutColor'>
         <div className='separator'></div>
         <div className="banner-content">
           <h2> Learn More about Debt and Loans! </h2>
