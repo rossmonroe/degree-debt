@@ -7,23 +7,23 @@ import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 
 import StudentDebtCalculator from './pages/StudentDebtCalculator.js';
-import Compare from './pages/Compare.js';
+import Results from './pages/Results.js';
 import Learn from './pages/Learn.js';
 import About from './pages/About.js';
 
 class App extends Component {
   render() {
     return (
-      
+
       <div className="App">
         <BrowserRouter basename={process.env.PUBLIC_URL}>
           <div className="fillParent">
-            <Header/>
+            <Header />
             <Route exact path="/" component={StudentDebtCalculator} />
-            <Route path="/compare" component={Compare} />
+            <Route path="/results" component={Results} />
             <Route path="/learn" component={Learn} />
             <Route path="/about" component={About} />
-            <Footer/>
+            <Footer />
           </div>
         </BrowserRouter>
       </div>

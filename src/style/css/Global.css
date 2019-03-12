@@ -218,6 +218,17 @@ a.button:hover{
     text-align: left;
 }
 
+.bannerText{ 
+    color: #FFFFFF;
+}
+.bannerText p{ 
+    margin-bottom: 60px;
+}
+
+.aboutColor{
+    background-color:#35a393
+}
+
 /*---------------- PAGE GLOBALS ----------------*/
 .page-wrapper{
     width: 100%;

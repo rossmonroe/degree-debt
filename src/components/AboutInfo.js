@@ -7,13 +7,28 @@ import '../style/css/Global.css';
 class AboutInfo extends Component {
   render() {
     return (
-      <div className='banner'>
+      <div className='banner  aboutColor'>
         <div className='separator'></div>
         <div className="banner-content">
-          <h2>About DebreeDebt and How it Came to Be</h2>
-          <p>DegreeDebt is a service to help provide you with information on your potential college debt. Our goal is to avoid any surprises and set you up for sucess in college and post-graduation.
-            Ideally, we will be able to help you make an informed decision on which college to attend and which degree will help you achieve your financial needs. In order to get the most out of
-            DegreeDebt you will need to input the following data to help us:</p>
+          <div className="bannerText">
+            <h2>About DebreeDebt and How it Came to Be</h2>
+            <p>DegreeDebt is a service to help provide you with information on your potential college debt. Our aim is to help you avoid any surprises and set you up for sucess in college and post-graduation.
+            With DegreeDebt, you will be able to help you make an informed decision on which college to attend and which degree will help you achieve your financial needs. </p>
+
+            <h3> Research Process </h3>
+            <p> To bring you the best possible product, our team conducted extensive user research to devlop a useful and intuitive final product. In our research we conducted multiple user interviews
+              conducted and collected survey results, and developed personas and user flows. </p>
+
+            <h3> Design and Testing </h3>
+            <p> After finalizing what we wanted to incorporate into our Design we created wireframes, a wireflow and high fidelity mockups of our design.
+              To test our designs along the way we tested our information architecture with card sorting tests and created heat maps through our A/B testing.
+            </p>
+
+            <h3> <b>The Result!</b></h3>
+            <p> This extensive process was all completed in order to bring you the best possible result. We hope you enjoy our website and would appreciate any feedback.
+              Feel free to rech out to us at daianak@uw.edu or ross@uw.edu.
+            </p>
+          </div>
         </div>
       </div>
     );
