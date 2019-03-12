@@ -330,6 +330,11 @@ a.button:hover{
 .form-input input[type="submit"]:focus{
 	outline: none;
 }
+label{
+    width: 100%;
+    text-align: left;
+}
+
 .form-input input[type="text"] {
 	background-color: #FAFAFA;
     width: 100%;
@@ -342,6 +347,7 @@ a.button:hover{
     -moz-border-radius: 8px;
     border-radius: 8px;
     font-size: 14px;
+    margin: 10px 0 16px 0;
 }
 .form-input input::-webkit-input-placeholder {
     color: #999999;
