@@ -4,6 +4,8 @@ import '../style/css/Global.css';
 
 import HeroImage from '../components/HeroImage.js';
 import { Link } from 'react-router-dom';
+import ScrollableAnchor from 'react-scrollable-anchor'
+
 
 
 class StudentDebtCalculator extends Component {
@@ -14,7 +16,9 @@ class StudentDebtCalculator extends Component {
         <div className='separator'></div>
         <div className='page-content'>
           <div id="debt-calculator">
+            <ScrollableAnchor id={'calculator'}>
             <h3>Student Debt Calculator:</h3>
+            </ScrollableAnchor>
             <div className='opacity-50 separator margin-10'></div>
             <form method="get" action="#" className="form-input clear" onSubmit={this.submitFormHandler}>
               <label>Degree Type:</label>
