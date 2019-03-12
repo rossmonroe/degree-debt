@@ -218,8 +218,11 @@ a.button:hover{
     text-align: left;
 }
 
-.bannerText{
-    color: #FFFFFF
+.bannerText{ 
+    color: #FFFFFF;
+}
+.bannerText p{ 
+    margin-bottom: 60px;
 }
 
 .aboutColor{
