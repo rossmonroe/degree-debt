@@ -17,12 +17,12 @@ class StudentDebtCalculator extends Component {
         <div className='page-content'>
           <div id="debt-calculator">
             <ScrollableAnchor id={'calculator'}>
-            <h3>Student Debt Calculator:</h3>
+              <h3>Student Debt Calculator:</h3>
             </ScrollableAnchor>
             <div className='opacity-50 separator margin-10'></div>
             <form method="get" action="#" className="form-input clear" onSubmit={this.submitFormHandler}>
               <label>Degree Type:</label>
-              <input name="q" size="40" type="text" autocomplete='off' list="degree-types" placeholder="Graduate Degree" ref='DegreeTypes'/>
+              <input name="q" size="40" type="text" autocomplete='off' list="degree-types" placeholder="Graduate Degree" ref='DegreeTypes' />
               <datalist id="degree-types">
                 <option value="Bachelors Degree" />
                 <option value="Associates Degree" />
@@ -31,7 +31,7 @@ class StudentDebtCalculator extends Component {
               </datalist>
 
               <label>Major:</label>
-              <input name="q" size="40" type="text" autocomplete='off' list="major" placeholder="Electrical Engineering" ref='Major'/>
+              <input name="q" size="40" type="text" autocomplete='off' list="major" placeholder="Electrical Engineering" ref='Major' />
               <datalist id="major">
                 <option value="Human Centered Design and Engineering" />
                 <option value="Computer Science" />
@@ -44,7 +44,7 @@ class StudentDebtCalculator extends Component {
               <label class="margin-10">Tuiton Type:</label>
               <ul className="radio-buttons">
                 <li>
-                  <input type="radio" id="in-state" name="selector" ref='TutionType'/>
+                  <input type="radio" id="in-state" name="selector" ref='TutionType' />
                   <label for="in-state">In State</label>
                   <div class="check"><div class="inside"></div></div>
                 </li>
@@ -55,8 +55,8 @@ class StudentDebtCalculator extends Component {
                 </li>
               </ul>
               <label className='clear'>Tuition Paid: <sub>(Scholarships, Cash, Grants.. etc.)</sub></label>
-              <input name="q" size="40" autocomplete='off' type="text" placeholder="$8,000" ref='TuitionPaid'/>
-              <Link to="/results"><input type="submit" className='button' value="Calculate" /></Link>
+              <input name="q" size="40" autocomplete='off' type="text" placeholder="$8,000" ref='TuitionPaid' />
+              <Link to="/results#results"><input type="submit" className='button' value="Calculate" /></Link>
               <div className='clear'></div>
             </form>
           </div>

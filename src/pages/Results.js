@@ -13,6 +13,11 @@ import {
 } from "react-vis";
 import StudentDebtCalculator from "./StudentDebtCalculator";
 
+import { Link } from 'react-router-dom';
+import ScrollableAnchor from 'react-scrollable-anchor';
+
+
+
 class Results extends Component {
   loanAmount = "45000";
   potentialSalary = "80000";
