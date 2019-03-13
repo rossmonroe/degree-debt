@@ -3,12 +3,15 @@ import React, { Component } from 'react';
 import '../style/css/Global.css';
 
 import LearnInfo from '../components/LearnInfo.js';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 class Learn extends Component {
   render() {
     return (
       <div class='page-wrapper'>
-        <LearnInfo />
+      <ScrollableAnchor id={'learn'}>
+        <LearnInfo/>
+        </ScrollableAnchor>
         <div className='separator margin-10'></div>
         <div class='page-content'>
             <h3>How do loans work?</h3>
