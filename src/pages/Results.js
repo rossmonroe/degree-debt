@@ -87,20 +87,8 @@ class Results extends Component {
       <div className='page-wrapper' >
         <div className='separator margin-10'></div>
         <div className='page-content'>
+          <div className="results-content">
           <h3>Your Results!</h3>
-
-          
-          <div className='chart'>
-            <div className="char-header">
-              <h4>Loan Accumulation During School</h4>
-              <div className="editable-amount">
-                <div className="edit-link" onClick={this.changeEditMode}>Edit</div>
-                {this.state.isInEditMode ?
-                this.rednerEditView() :
-                this.renderDefaultView()}
-              </div>
-            </div>
-
           <h4><strong>Degree Type:</strong> Masters Degree</h4>
           <h4><strong>Major:</strong> Computer Science</h4>
           <h4><strong>Tuition Type:</strong> In State</h4>
@@ -108,7 +96,16 @@ class Results extends Component {
           <button class="button">Edit</button>
 
           <div class='chart'>
-            <h4> Loan Accumulation During School (Total Loans: 50,000)</h4>
+            <div className="chart-header">
+              <h4> Loan Accumulation During School</h4>
+                <div className="editable-amount">
+                  <div className="edit-link" onClick={this.changeEditMode}>Edit</div>
+                  <h4>Total Loans: $</h4>
+                  {this.state.isInEditMode ?
+                  this.rednerEditView() :
+                  this.renderDefaultView()}
+                </div>
+            </div>
             <XYPlot height={300} width={800}>
               <VerticalGridLines />
               <HorizontalGridLines />
@@ -143,7 +140,8 @@ class Results extends Component {
           </div>
 
         </div>
-      </div >
+      </div>
+    </div>
     );
   }
 }

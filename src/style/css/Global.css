@@ -86,6 +86,7 @@ h3{
 }
 
 h4{
+    font-size: 20px;
     margin-top:20px;
 }
 
@@ -491,6 +492,24 @@ input[type=radio]:checked ~ label{
 }
 
 /*---------------- RESULTS PAGE ----------------*/
+.results-content{
+    width: 800px;
+}
+
+.chart-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 10px 0 16px 0;
+}
+
+.chart-header h4{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
 
 .editable-amount input{
     background-color: #FAFAFA;
@@ -509,8 +528,7 @@ input[type=radio]:checked ~ label{
 .editable-amount {
     width: fit-content;
     border-radius: 8px;
-    font-size: 22px;
-    display: inline-block;
+    font-size: 20px;
 }
 
 .editable-amount .button{
@@ -522,6 +540,8 @@ input[type=radio]:checked ~ label{
     text-decoration: underline;
     font-size: 14px;
     margin-bottom: 10px;
+    text-align: right;
+    display: block;
 }
 .edit-link:hover{
     color:#1d8eff;
