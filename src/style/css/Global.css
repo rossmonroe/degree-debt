@@ -71,18 +71,21 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'smythesansregular';
     margin-bottom: 12px;
     text-align: left;
+    line-height: 100%;
 }
 
 h1{
     font-size: 40px;
     color: #35a393;
+    line-height: 120%;
 }
 h2{
     font-size: 36px;
+    padding-bottom: 6px;
 }
 h3{
     font-size: 24px;
-    margin-bottom:20px;
+    margin:60px 0 20px 0;
 }
 
 h4{
@@ -93,8 +96,8 @@ h4{
 p{
     font-family: 'Graphik LCG Regular';
     size: 16px;
-    line-height:140%;
-    margin-bottom:20px;
+    line-height:160%;
+    margin-bottom:32px;
     text-align: left;
 }
 sub{
@@ -224,7 +227,7 @@ a.button:hover{
     max-width: 70%;
     width: 100%;
     margin: 56px auto 0 auto;
-    padding:0 5% 50px 5%;
+    padding:0 5% 30px 5%;
     text-align: left;
 }
 
@@ -232,7 +235,7 @@ a.button:hover{
     color: #FFFFFF;
 }
 .bannerText p{ 
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .aboutColor{
