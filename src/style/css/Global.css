@@ -362,7 +362,7 @@ label{
 	border-bottom: 1px solid #FFFFFF;
 	border-left:none;
 	border-right:none;
-    padding: 12px 30px 8px 12px;
+    padding: 12px 12px 8px 12px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
@@ -489,7 +489,48 @@ input[type=radio]:checked ~ .check::before{
 input[type=radio]:checked ~ label{
     color:rgb(26, 26, 26);
 }
-  
+
+/*---------------- RESULTS PAGE ----------------*/
+
+.editable-amount input{
+    background-color: #FAFAFA;
+    width: 120px;
+	border-top:1px solid #D0D2D7;
+	border-bottom: 1px solid #FFFFFF;
+	border-left:none;
+    border-right:none;
+    font-size:16px;
+    padding: 12px 12px 8px 12px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.editable-amount {
+    width: fit-content;
+    border-radius: 8px;
+    font-size: 22px;
+    display: inline-block;
+}
+
+.editable-amount .button{
+    margin:0;
+}
+
+.edit-link{
+    color:#0054a6;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.edit-link:hover{
+    color:#1d8eff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.edit-text{
+    display: inline-block;
+}
 
 /*---------------- MEDIA QUERIES ----------------*/
 
