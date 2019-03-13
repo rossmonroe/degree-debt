@@ -4,11 +4,17 @@ import '../style/css/Global.css';
 
 import '../../node_modules/react-vis/dist/style.css';
 import { XYPlot, LineSeries, VerticalGridLines, HorizontalGridLines, XAxis, YAxis } from 'react-vis';
+import StudentDebtCalculator from './StudentDebtCalculator';
 
 class Results extends Component {
+  
+  loanAmount = "45000"
+  potentialSalary = "80000"
+  repaymentTime = "10"
+  monthlyPayment = "265"
 
-  state={
-    value: "45000",
+  state ={
+    value: "",
     isInEditMode: false
   }
 
@@ -37,13 +43,14 @@ class Results extends Component {
     </div>
   }
 
-  renderDefaultView = () => {
-    return <div className="edit-text" onDoubleClick={this.changeEditMode}>
-      {this.state.value}
+  renderDefaultView = (amount) => {
+    return <div className="edit-text">
+      {this.state.value = amount}
     </div>
   }
 
   render() {
+
     const data1 = [
       { x: 0, y: 0 },
       { x: 1, y: 12.5 },
@@ -88,7 +95,7 @@ class Results extends Component {
         <div className='separator margin-10'></div>
         <div className='page-content'>
           <div className="results-content">
-          <h3>Your Results!</h3>
+          <h2>Your Results!</h2>
           <h4><strong>Degree Type:</strong> Masters Degree</h4>
           <h4><strong>Major:</strong> Computer Science</h4>
           <h4><strong>Tuition Type:</strong> In State</h4>
@@ -103,7 +110,7 @@ class Results extends Component {
                   <h4>Total Loans: $</h4>
                   {this.state.isInEditMode ?
                   this.rednerEditView() :
-                  this.renderDefaultView()}
+                  this.renderDefaultView(this.loanAmount)}
                 </div>
             </div>
             <XYPlot height={300} width={800}>
@@ -117,7 +124,16 @@ class Results extends Component {
 
 
           <div class='chart'>
-            <h4> Potential Salary Over Time (Starting: $80,000) </h4>
+          <div className="chart-header">
+              <h4>Potential Salary Over Time</h4>
+                <div className="editable-amount">
+                  <div className="edit-link" onClick={this.changeEditMode}>Edit</div>
+                  <h4>Starting: $</h4>
+                  {this.state.isInEditMode ?
+                  this.rednerEditView() :
+                  this.renderDefaultView(this.potentialSalary)}
+                </div>
+            </div>
             <XYPlot height={300} width={800}>
               <VerticalGridLines />
               <HorizontalGridLines />
@@ -129,7 +145,24 @@ class Results extends Component {
           </div>
 
           <div class='chart'>
-            <h4> Projected Loan Payment Over Time (Total Loans: 50,000)</h4>
+            <div className="chart-header">
+              <h4>Loan Repayment Over Time </h4>
+                <div className="editable-amount">
+                <div className="editable-amount">
+                
+                  <div className="edit-link" onClick={this.changeEditMode}>Edit</div>
+                  <h4>Repayment Time:&nbsp;</h4>
+                  {this.state.isInEditMode ?
+                  this.rednerEditView() :
+                  this.renderDefaultView(this.repaymentTime)}<h4>&nbsp;Years</h4>
+                </div><br/>
+                  <div className="edit-link" onClick={this.changeEditMode}>Edit</div>
+                  <h4>Monthly Payment: $</h4>
+                  {this.state.isInEditMode ?
+                  this.rednerEditView() :
+                  this.renderDefaultView(this.monthlyPayment)}
+                </div>
+            </div>
             <XYPlot height={300} width={800}>
               <VerticalGridLines />
               <HorizontalGridLines />

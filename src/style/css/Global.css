@@ -236,7 +236,7 @@ a.button:hover{
 }
 
 .aboutColor{
-    background-color:#35a393
+    background-color: #4cbdad;
 }
 
 /*---------------- PAGE GLOBALS ----------------*/
@@ -496,13 +496,18 @@ input[type=radio]:checked ~ label{
     width: 800px;
 }
 
+.results-content .button{
+    margin: 0;
+}
+
 .chart-header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     margin: 10px 0 16px 0;
+    text-align: right;
 }
 
 .chart-header h4{
@@ -529,6 +534,10 @@ input[type=radio]:checked ~ label{
     width: fit-content;
     border-radius: 8px;
     font-size: 20px;
+}
+
+.editable-amount h4{
+    font-size:18px;
 }
 
 .editable-amount .button{
