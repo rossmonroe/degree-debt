@@ -24,6 +24,19 @@ class Results extends Component {
 
 
     const data2 = [
+      { x: 0, y: 70000 },
+      { x: 1, y: 80000 },
+      { x: 2, y: 90000 },
+      { x: 3, y: 100000 },
+      { x: 4, y: 110000 },
+      { x: 5, y: 120000 },
+      { x: 6, y: 130000 },
+      { x: 7, y: 140000 },
+      { x: 8, y: 150000 },
+      { x: 9, y: 160000 }
+    ];
+
+    const data3 = [
       { x: 0, y: 8 },
       { x: 1, y: 5 },
       { x: 2, y: 4 },
@@ -46,27 +59,39 @@ class Results extends Component {
           <h3>Your Results!</h3>
 
           <div class='chart'>
-            <h4> Potential Salary Over Time </h4>
-            <XYPlot height={300} width={600}>
+            <h4> Loan Accumulation During School</h4>
+            <XYPlot height={300} width={800}>
+              <VerticalGridLines />
+              <HorizontalGridLines />
+              <XAxis />
+              <YAxis />
+              <LineSeries data={data1} />
+            </XYPlot>
+          </div>
+
+          <div class='chart'>
+            <h4> Potential Salary Over Time (in thousands)</h4>
+            <XYPlot height={300} width={800}>
               <VerticalGridLines />
               <HorizontalGridLines />
               <XAxis title="Years" />
               <YAxis title="Money (USD)" />
-              <LineSeries data={data1} />
+              <LineSeries data={data2} />
             </XYPlot>
 
           </div>
 
           <div class='chart'>
-            <h4> Projected Payment Over Time</h4>
-            <XYPlot height={300} width={600}>
+            <h4> Projected Loan Payment Over Time</h4>
+            <XYPlot height={300} width={800}>
               <VerticalGridLines />
               <HorizontalGridLines />
               <XAxis />
               <YAxis />
-              <LineSeries data={data2} />
+              <LineSeries data={data3} />
             </XYPlot>
           </div>
+
         </div>
       </div >
     );
