@@ -7,8 +7,43 @@ import { XYPlot, LineSeries, VerticalGridLines, HorizontalGridLines, XAxis, YAxi
 
 class Results extends Component {
 
-  render() {
+  state={
+    value: "45000",
+    isInEditMode: false
+  }
 
+  changeEditMode = () => {
+      this.setState({
+          isInEditMode: !this.state.isInEditMode
+      })
+  }
+
+  updateComponentValue = () => {
+    this.setState({
+        isInEditMode: false,
+        value: this.refs.theTextInput.value
+    })
+  }
+
+  rednerEditView = () => {
+    return <div>
+    <input 
+      type="number" 
+      defaultValue={this.state.value}
+      ref="theTextInput"
+      />
+    <button class="button exit" onClick={this.changeEditMode}>X</button>
+    <button class="button ok" onClick={this.updateComponentValue}>OK</button>
+    </div>
+  }
+
+  renderDefaultView = () => {
+    return <div className="edit-text" onDoubleClick={this.changeEditMode}>
+      {this.state.value}
+    </div>
+  }
+
+  render() {
     const data1 = [
       { x: 0, y: 8 },
       { x: 1, y: 5 },
@@ -53,13 +88,21 @@ class Results extends Component {
 
 
     return (
-      <div class='page-wrapper' >
+      <div className='page-wrapper' >
         <div className='separator margin-10'></div>
-        <div class='page-content'>
+        <div className='page-content'>
           <h3>Your Results!</h3>
-
-          <div class='chart'>
-            <h4> Loan Accumulation During School</h4>
+          
+          <div className='chart'>
+            <div className="char-header">
+              <h4>Loan Accumulation During School</h4>
+              <div className="editable-amount">
+                <div className="edit-link" onClick={this.changeEditMode}>Edit</div>
+                {this.state.isInEditMode ?
+                this.rednerEditView() :
+                this.renderDefaultView()}
+              </div>
+            </div>
             <XYPlot height={300} width={800}>
               <VerticalGridLines />
               <HorizontalGridLines />
@@ -69,7 +112,7 @@ class Results extends Component {
             </XYPlot>
           </div>
 
-          <div class='chart'>
+          <div className='chart'>
             <h4> Potential Salary Over Time (in thousands)</h4>
             <XYPlot height={300} width={800}>
               <VerticalGridLines />
@@ -81,7 +124,7 @@ class Results extends Component {
 
           </div>
 
-          <div class='chart'>
+          <div className='chart'>
             <h4> Projected Loan Payment Over Time</h4>
             <XYPlot height={300} width={800}>
               <VerticalGridLines />
