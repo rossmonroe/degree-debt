@@ -1,16 +1,17 @@
 {
-  "main.css": "/degree-debt/static/css/main.cc60a4e1.chunk.css",
-  "main.js": "/degree-debt/static/js/main.d3e5b1b1.chunk.js",
-  "main.js.map": "/degree-debt/static/js/main.d3e5b1b1.chunk.js.map",
+  "main.css": "/degree-debt/static/css/main.03fbdb3f.chunk.css",
+  "main.js": "/degree-debt/static/js/main.fb94784f.chunk.js",
+  "main.js.map": "/degree-debt/static/js/main.fb94784f.chunk.js.map",
   "runtime~main.js": "/degree-debt/static/js/runtime~main.b270ac23.js",
   "runtime~main.js.map": "/degree-debt/static/js/runtime~main.b270ac23.js.map",
   "static/css/2.1abb211f.chunk.css": "/degree-debt/static/css/2.1abb211f.chunk.css",
-  "static/js/2.caa18825.chunk.js": "/degree-debt/static/js/2.caa18825.chunk.js",
-  "static/js/2.caa18825.chunk.js.map": "/degree-debt/static/js/2.caa18825.chunk.js.map",
+  "static/js/2.4bd6e655.chunk.js": "/degree-debt/static/js/2.4bd6e655.chunk.js",
+  "static/js/2.4bd6e655.chunk.js.map": "/degree-debt/static/js/2.4bd6e655.chunk.js.map",
   "index.html": "/degree-debt/index.html",
-  "precache-manifest.1b7cb39da5e5391ec9b9d8556edcf9b2.js": "/degree-debt/precache-manifest.1b7cb39da5e5391ec9b9d8556edcf9b2.js",
+  "precache-manifest.f50938eb6c8d3f6c3d4c5694ebba8712.js": "/degree-debt/precache-manifest.f50938eb6c8d3f6c3d4c5694ebba8712.js",
   "service-worker.js": "/degree-debt/service-worker.js",
   "static/css/2.1abb211f.chunk.css.map": "/degree-debt/static/css/2.1abb211f.chunk.css.map",
-  "static/css/main.cc60a4e1.chunk.css.map": "/degree-debt/static/css/main.cc60a4e1.chunk.css.map",
-  "static/media/Global.css": "/degree-debt/static/media/smythesans-webfont.de871946.woff2"
+  "static/css/main.03fbdb3f.chunk.css.map": "/degree-debt/static/css/main.03fbdb3f.chunk.css.map",
+  "static/media/Global.css": "/degree-debt/static/media/smythesans-webfont.de871946.woff2",
+  "static/media/college-scorecard.png": "/degree-debt/static/media/college-scorecard.db5dc1f1.png"
 }
