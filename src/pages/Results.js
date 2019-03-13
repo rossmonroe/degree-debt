@@ -3,6 +3,9 @@ import React, { Component } from "react";
 import "../style/css/Global.css";
 
 import "../../node_modules/react-vis/dist/style.css";
+import EditAmount from "../components/EditAmount.js";
+import EditResults from "../components/EditResults";
+
 import {
   XYPlot,
   LineSeries,
@@ -11,12 +14,9 @@ import {
   XAxis,
   YAxis
 } from "react-vis";
-import StudentDebtCalculator from "./StudentDebtCalculator";
 
-import { Link } from 'react-router-dom';
-import ScrollableAnchor from 'react-scrollable-anchor';
-
-
+import { Link } from "react-router-dom";
+import ScrollableAnchor from "react-scrollable-anchor";
 
 class Results extends Component {
   loanAmount = "45000";
@@ -24,53 +24,33 @@ class Results extends Component {
   repaymentTime = "10";
   monthlyPayment = "265";
 
+  degreeType = "Masters Degree";
+  major = "Computer Science";
+  tuitionType = "In State";
+  tuitionPaid = "$8,000";
+
   state = {
-    value: "",
-    isInEditMode: false
-  };
-
-  changeEditMode = () => {
-    this.setState({
-      isInEditMode: !this.state.isInEditMode
-    });
-  };
-
-  updateComponentValue = () => {
-    this.setState({
-      isInEditMode: false,
-      value: this.refs.theTextInput.value
-    });
-  };
-
-  rednerEditView = () => {
-    return (
-      <div>
-        <input
-          type="number"
-          defaultValue={this.state.value}
-          ref="theTextInput"
-        />
-        <button class="button exit" onClick={this.changeEditMode}>
-          X
-        </button>
-        <button class="button ok" onClick={this.updateComponentValue}>
-          OK
-        </button>
-      </div>
-    );
-  };
-
-  renderDefaultView = amount => {
-    return <div className="edit-text">{(this.state.value = amount)}</div>;
+    amounts: [
+      { id: "Loan Amount", value: this.loanAmount },
+      { id: "Potential Salary", value: this.potentialSalary },
+      { id: "Repayment Time", value: this.repaymentTime },
+      { id: "Monthly Payment", value: this.monthlyPayment }
+    ],
+    results: [
+      { id: "Degree Type", value: this.degreeType },
+      { id: "Major", value: this.major },
+      { id: "Tuition Type", value: this.tuitionType },
+      { id: "TuitionPaid", value: this.tuitionPaid }
+    ]
   };
 
   render() {
     const data1 = [
       { x: 0, y: 0 },
-      { x: 1, y: 12.5 },
+      { x: 1, y: 14 },
       { x: 2, y: 25 },
-      { x: 3, y: 37.5 },
-      { x: 4, y: 50 }
+      { x: 3, y: 42 },
+      { x: 4, y: 44 }
     ];
 
     const data2 = [
@@ -118,20 +98,18 @@ class Results extends Component {
             <h4>
               <strong>Tuition Already Paid:</strong> $8,000
             </h4>
-            <button class="button">Edit</button>
+            <Link to="/#calculator">
+              <button class="button">Edit</button>
+            </Link>
 
             <div class="chart">
               <div className="chart-header">
-                <h4> Loan Accumulation During School</h4>
-                <div className="editable-amount">
-                  <div className="edit-link" onClick={this.changeEditMode}>
-                    Edit
-                  </div>
-                  <h4>Total Loans: $</h4>
-                  {this.state.isInEditMode
-                    ? this.rednerEditView()
-                    : this.renderDefaultView(this.loanAmount)}
-                </div>
+                <h4>Loan Accumulation During School</h4>
+                <EditAmount
+                  key={this.state.amounts[0].id}
+                  value={this.state.amounts[0].value}
+                  id={this.state.amounts[0].id}
+                />
               </div>
               <XYPlot height={300} width={800}>
                 <VerticalGridLines />
@@ -145,15 +123,11 @@ class Results extends Component {
             <div class="chart">
               <div className="chart-header">
                 <h4>Potential Salary Over Time</h4>
-                <div className="editable-amount">
-                  <div className="edit-link" onClick={this.changeEditMode}>
-                    Edit
-                  </div>
-                  <h4>Starting: $</h4>
-                  {this.state.isInEditMode
-                    ? this.rednerEditView()
-                    : this.renderDefaultView(this.potentialSalary)}
-                </div>
+                <EditAmount
+                  key={this.state.amounts[1].id}
+                  value={this.state.amounts[1].value}
+                  id={this.state.amounts[1].id}
+                />
               </div>
               <XYPlot height={300} width={800}>
                 <VerticalGridLines />
@@ -168,24 +142,16 @@ class Results extends Component {
               <div className="chart-header">
                 <h4>Loan Repayment Over Time </h4>
                 <div className="editable-amount">
-                  <div className="editable-amount">
-                    <div className="edit-link" onClick={this.changeEditMode}>
-                      Edit
-                    </div>
-                    <h4>Repayment Time:&nbsp;</h4>
-                    {this.state.isInEditMode
-                      ? this.rednerEditView()
-                      : this.renderDefaultView(this.repaymentTime)}
-                    <h4>&nbsp;Years</h4>
-                  </div>
-                  <br />
-                  <div className="edit-link" onClick={this.changeEditMode}>
-                    Edit
-                  </div>
-                  <h4>Monthly Payment: $</h4>
-                  {this.state.isInEditMode
-                    ? this.rednerEditView()
-                    : this.renderDefaultView(this.monthlyPayment)}
+                  <EditAmount
+                    key={this.state.amounts[2].id}
+                    value={this.state.amounts[2].value}
+                    id={this.state.amounts[2].id}
+                  />
+                  <EditAmount
+                    key={this.state.amounts[3].id}
+                    value={this.state.amounts[3].value}
+                    id={this.state.amounts[3].id}
+                  />
                 </div>
               </div>
               <XYPlot height={300} width={800}>
