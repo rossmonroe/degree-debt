@@ -25,7 +25,7 @@ class Header extends Component {
       </div>
       <div id="header-title">
         <h1>Learn how your degree choice <br/>affects your financial future.</h1>
-        <Link className='nav-link' to="/#calculator" href="#calculator"><div className='button header-button'>Get Started!</div></Link>
+        <Link to="/#calculator" href="#calculator"><div className='button header-button'>Get Started!</div></Link>
       </div>
       </div>
     );
