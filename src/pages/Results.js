@@ -6,40 +6,45 @@ import '../../node_modules/react-vis/dist/style.css';
 import { XYPlot, LineSeries, VerticalGridLines, HorizontalGridLines, XAxis, YAxis } from 'react-vis';
 import StudentDebtCalculator from './StudentDebtCalculator';
 
+import { Link } from 'react-router-dom';
+import ScrollableAnchor from 'react-scrollable-anchor';
+
+
+
 class Results extends Component {
-  
+
   loanAmount = "45000"
   potentialSalary = "80000"
   repaymentTime = "10"
   monthlyPayment = "265"
 
-  state ={
+  state = {
     value: "",
     isInEditMode: false
   }
 
   changeEditMode = () => {
-      this.setState({
-          isInEditMode: !this.state.isInEditMode
-      })
+    this.setState({
+      isInEditMode: !this.state.isInEditMode
+    })
   }
 
   updateComponentValue = () => {
     this.setState({
-        isInEditMode: false,
-        value: this.refs.theTextInput.value
+      isInEditMode: false,
+      value: this.refs.theTextInput.value
     })
   }
 
   rednerEditView = () => {
     return <div>
-    <input 
-      type="number" 
-      defaultValue={this.state.value}
-      ref="theTextInput"
+      <input
+        type="number"
+        defaultValue={this.state.value}
+        ref="theTextInput"
       />
-    <button class="button exit" onClick={this.changeEditMode}>X</button>
-    <button class="button ok" onClick={this.updateComponentValue}>OK</button>
+      <button class="button exit" onClick={this.changeEditMode}>X</button>
+      <button class="button ok" onClick={this.updateComponentValue}>OK</button>
     </div>
   }
 
@@ -91,90 +96,93 @@ class Results extends Component {
 
 
     return (
-      <div className='page-wrapper' >
-        <div className='separator margin-10'></div>
-        <div className='page-content'>
-          <div className="results-content">
-          <h2>Your Results!</h2>
-          <h4><strong>Degree Type:</strong> Masters Degree</h4>
-          <h4><strong>Major:</strong> Computer Science</h4>
-          <h4><strong>Tuition Type:</strong> In State</h4>
-          <h4><strong>Tuition Already Paid:</strong> $8,000</h4>
-          <button class="button">Edit</button>
+      <ScrollableAnchor id={'results'}>
+        <div className='page-wrapper' >
+          <div className='separator margin-10'></div>
+          <div className='page-content'>
+            <div className="results-content">
+              <h2>Your Results!</h2>
+              <h4><strong>Degree Type:</strong> Masters Degree</h4>
+              <h4><strong>Major:</strong> Computer Science</h4>
+              <h4><strong>Tuition Type:</strong> In State</h4>
+              <h4><strong>Tuition Already Paid:</strong> $8,000</h4>
+              <Link to="/#calculator" href="#calculator"><div className='button header-button'>Edit</div></Link>
 
-          <div class='chart'>
-            <div className="chart-header">
-              <h4> Loan Accumulation During School</h4>
-                <div className="editable-amount">
-                  <div className="edit-link" onClick={this.changeEditMode}>Edit</div>
-                  <h4>Total Loans: $</h4>
-                  {this.state.isInEditMode ?
-                  this.rednerEditView() :
-                  this.renderDefaultView(this.loanAmount)}
+
+              <div class='chart'>
+                <div className="chart-header">
+                  <h4> Loan Accumulation During School</h4>
+                  <div className="editable-amount">
+                    <div className="edit-link" onClick={this.changeEditMode}>Edit</div>
+                    <h4>Total Loans: $</h4>
+                    {this.state.isInEditMode ?
+                      this.rednerEditView() :
+                      this.renderDefaultView(this.loanAmount)}
+                  </div>
                 </div>
-            </div>
-            <XYPlot height={300} width={800}>
-              <VerticalGridLines />
-              <HorizontalGridLines />
-              <XAxis title="Year" />
-              <YAxis title="Money(USD)" />
-              <LineSeries data={data1} />
-            </XYPlot>
-          </div>
+                <XYPlot height={300} width={800}>
+                  <VerticalGridLines />
+                  <HorizontalGridLines />
+                  <XAxis title="Year" />
+                  <YAxis title="Money(USD)" />
+                  <LineSeries data={data1} />
+                </XYPlot>
+              </div>
 
 
-          <div class='chart'>
-          <div className="chart-header">
-              <h4>Potential Salary Over Time</h4>
-                <div className="editable-amount">
-                  <div className="edit-link" onClick={this.changeEditMode}>Edit</div>
-                  <h4>Starting: $</h4>
-                  {this.state.isInEditMode ?
-                  this.rednerEditView() :
-                  this.renderDefaultView(this.potentialSalary)}
+              <div class='chart'>
+                <div className="chart-header">
+                  <h4>Potential Salary Over Time</h4>
+                  <div className="editable-amount">
+                    <div className="edit-link" onClick={this.changeEditMode}>Edit</div>
+                    <h4>Starting: $</h4>
+                    {this.state.isInEditMode ?
+                      this.rednerEditView() :
+                      this.renderDefaultView(this.potentialSalary)}
+                  </div>
                 </div>
-            </div>
-            <XYPlot height={300} width={800}>
-              <VerticalGridLines />
-              <HorizontalGridLines />
-              <XAxis title="Years" />
-              <YAxis title="Money (USD) (in thousands)" />
-              <LineSeries data={data2} />
-            </XYPlot>
+                <XYPlot height={300} width={800}>
+                  <VerticalGridLines />
+                  <HorizontalGridLines />
+                  <XAxis title="Years" />
+                  <YAxis title="Money (USD) (in thousands)" />
+                  <LineSeries data={data2} />
+                </XYPlot>
 
-          </div>
+              </div>
 
-          <div class='chart'>
-            <div className="chart-header">
-              <h4>Loan Repayment Over Time </h4>
-                <div className="editable-amount">
-                <div className="editable-amount">
-                
-                  <div className="edit-link" onClick={this.changeEditMode}>Edit</div>
-                  <h4>Repayment Time:&nbsp;</h4>
-                  {this.state.isInEditMode ?
-                  this.rednerEditView() :
-                  this.renderDefaultView(this.repaymentTime)}<h4>&nbsp;Years</h4>
-                </div><br/>
-                  <div className="edit-link" onClick={this.changeEditMode}>Edit</div>
-                  <h4>Monthly Payment: $</h4>
-                  {this.state.isInEditMode ?
-                  this.rednerEditView() :
-                  this.renderDefaultView(this.monthlyPayment)}
+              <div class='chart'>
+                <div className="chart-header">
+                  <h4>Loan Repayment Over Time </h4>
+                  <div className="editable-amount">
+                    <div className="editable-amount">
+
+                      <div className="edit-link" onClick={this.changeEditMode}>Edit</div>
+                      <h4>Repayment Time:&nbsp;</h4>
+                      {this.state.isInEditMode ?
+                        this.rednerEditView() :
+                        this.renderDefaultView(this.repaymentTime)}<h4>&nbsp;Years</h4>
+                    </div><br />
+                    <div className="edit-link" onClick={this.changeEditMode}>Edit</div>
+                    <h4>Monthly Payment: $</h4>
+                    {this.state.isInEditMode ?
+                      this.rednerEditView() :
+                      this.renderDefaultView(this.monthlyPayment)}
+                  </div>
                 </div>
-            </div>
-            <XYPlot height={300} width={800}>
-              <VerticalGridLines />
-              <HorizontalGridLines />
-              <XAxis title="Year out of School" />
-              <YAxis title="Money(USD)" />
-              <LineSeries data={data3} />
-            </XYPlot>
-          </div>
+                <XYPlot height={300} width={800}>
+                  <VerticalGridLines />
+                  <HorizontalGridLines />
+                  <XAxis title="Year out of School" />
+                  <YAxis title="Money(USD)" />
+                  <LineSeries data={data3} />
+                </XYPlot>
+              </div>
 
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </ScrollableAnchor>
     );
   }
 }
